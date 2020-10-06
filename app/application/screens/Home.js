@@ -29,7 +29,7 @@ export default class Home extends Component {
   render () {
     return (
 
-<Container style={{backgroundColor: "#000015"}}> 
+<Container style={{backgroundColor: "#000015"}}>
 
 <ScrollView>
 
@@ -67,15 +67,20 @@ export default class Home extends Component {
     </TouchableOpacity>
     </Col>
 
+</Row>
+
+
+
+
+<Row>
+
+
     <Col>
     <TouchableOpacity onPress={this.navigateToScreen('ExercisesScreen')} style={styles.gridHomeCol}>
     <Image source={require('../../assets/images/exercises.png')} style={styles.gridHomeImage} resizeMode="contain"/>
     <Text style={styles.gridHomeText}>{Strings.ST2.toUpperCase()}</Text>
     </TouchableOpacity>
     </Col>
-</Row>
-
-<Row>
     {/* <Col>
     <TouchableOpacity onPress={this.navigateToScreen('DietsScreen')} style={styles.gridHomeCol}>
     <Image source={require('../../assets/images/diets.png')} style={styles.gridHomeImage} resizeMode="contain"/>

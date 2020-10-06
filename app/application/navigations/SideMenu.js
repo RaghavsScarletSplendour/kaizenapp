@@ -50,7 +50,7 @@ class SideMenu extends Component {
 
             </ListItem>
 
-                <ListItem style={styles.item_menu} onPress={this.navigateToScreen('DietsScreen')} icon>
+                {/*<ListItem style={styles.item_menu} onPress={this.navigateToScreen('DietsScreen')} icon>
                         <Left style={{borderBottomWidth: 0}}>
                 <MaterialCommunityIcons name="silverware" style={styles.iconSidemenu}/>
             </Left>
@@ -58,10 +58,10 @@ class SideMenu extends Component {
                 <Text style={styles.text_menu}>{Strings.ST3.toUpperCase()}</Text>
               </Body>
 
-            </ListItem>
+            </ListItem>*/}
 
 
-                <ListItem style={styles.item_menu} onPress={this.navigateToScreen('PostsScreen')} icon>
+                {/*<ListItem style={styles.item_menu} onPress={this.navigateToScreen('PostsScreen')} icon>
                         <Left style={{borderBottomWidth: 0}}>
                 <MaterialCommunityIcons name="library-books" style={styles.iconSidemenu}/>
             </Left>
@@ -69,9 +69,9 @@ class SideMenu extends Component {
                 <Text style={styles.text_menu}>{Strings.ST4.toUpperCase()}</Text>
               </Body>
 
-            </ListItem>
+            </ListItem>*/}
 
-                <ListItem style={styles.item_menu} onPress={this.navigateToScreen('QuotesScreen')} icon>
+                {/*<ListItem style={styles.item_menu} onPress={this.navigateToScreen('QuotesScreen')} icon>
                         <Left style={{borderBottomWidth: 0}}>
                 <MaterialCommunityIcons name="format-quote-close" style={styles.iconSidemenu}/>
             </Left>
@@ -79,9 +79,9 @@ class SideMenu extends Component {
                 <Text style={styles.text_menu}>{Strings.ST5.toUpperCase()}</Text>
               </Body>
 
-            </ListItem>
+            </ListItem>*/}
 
-                <ListItem style={styles.item_menu} onPress={this.navigateToScreen('CalculatorScreen')} icon>
+                {/*<ListItem style={styles.item_menu} onPress={this.navigateToScreen('CalculatorScreen')} icon>
                         <Left style={{borderBottomWidth: 0}}>
                 <MaterialCommunityIcons name="calculator" style={styles.iconSidemenu}/>
             </Left>
@@ -89,7 +89,7 @@ class SideMenu extends Component {
                 <Text style={styles.text_menu}>{Strings.ST105.toUpperCase()}</Text>
               </Body>
 
-            </ListItem>
+            </ListItem>*/}
 
                 <ListItem style={styles.item_menu} onPress={this.navigateToScreen('ProfileScreen')} icon>
                         <Left style={{borderBottomWidth: 0}}>
@@ -111,7 +111,7 @@ class SideMenu extends Component {
 
             </ListItem>
 
- 
+
         </ScrollView>
 
         <TouchableOpacity onPress={this.navigateToScreen('LogoutScreen')} activeOpacity={1}>

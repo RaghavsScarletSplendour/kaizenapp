@@ -127,7 +127,7 @@ inputBgicon:{
   borderBottomRightRadius: 50,
   marginTop: ( Platform.OS === 'ios' ) ? 3 : 1,
   alignItems: 'center',
-  justifyContent: 'center'  
+  justifyContent: 'center'
 },
 
 alert:{
@@ -392,7 +392,7 @@ left: 0,
 right: 0,
 bottom: 0,
 height: height /4.50,
-width : null, 
+width : null,
 alignItems: 'center',
 justifyContent: 'flex-end',
 borderRadius: 8,
@@ -569,7 +569,7 @@ title_diets:{
 color: '#FFF',
 fontSize: 20,
 marginBottom: 15,
-fontWeight: 'bold' 
+fontWeight: 'bold'
 },
 
 title_diets_categories:{
@@ -623,7 +623,7 @@ width: width,
 height: height * 0.39,
 alignItems: 'flex-start',
 justifyContent: 'flex-end',
-padding: 15 
+padding: 15
 },
 
 gradient_diets_2columns:{
@@ -761,7 +761,7 @@ title_card:{
 color: '#FFF',
 fontSize: 16,
 marginBottom: 6,
-fontWeight: 'bold' 
+fontWeight: 'bold'
 },
 
 category_card:{
@@ -892,7 +892,7 @@ paddingTop: 40
 category_workout:{
 color: PrimaryColor,
 fontSize: 16,
-fontWeight: 'bold' 
+fontWeight: 'bold'
 
 },
 
@@ -1240,8 +1240,8 @@ note_home:{
 
 
 gridHomeImage:{
-  width: 50,
-  height: 50,
+  width: 60,
+  height: 60,
   marginBottom: 15,
   marginTop: 20
 },
@@ -1347,12 +1347,12 @@ paddingLeft: 25
 
 bmicoltext:{
 fontWeight: 'bold',
-fontSize: 16 
+fontSize: 16
 },
 
 bmicolnumber:{
 fontWeight: 'bold',
-fontSize: 16 
+fontSize: 16
 },
 
 //////////////////////// MENU
@@ -1392,7 +1392,7 @@ sideMenu:{
 backgroundColor: '#ffffff',
 flexDirection:'column',
 justifyContent: 'center',
-alignItems: 'center', 
+alignItems: 'center',
 height: height * 0.29,
 marginTop: 25,
 padding:25
@@ -1425,7 +1425,7 @@ icon_menu:{
   },
 
   modal: {
-    
+
   },
 
   modal3: {
