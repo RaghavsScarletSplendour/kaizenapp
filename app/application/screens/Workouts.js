@@ -1,6 +1,6 @@
  import React, {Component} from 'react';
 import { NavigationActions } from 'react-navigation';
-import AppPreLoader from '../components/AppPreLoader'; 
+import AppPreLoader from '../components/AppPreLoader';
 import{ ImageBackground, Dimensions, View, TouchableOpacity, FlatList, Button, ActivityIndicator, Image, ScrollView, SafeAreaView, StatusBar } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -41,7 +41,7 @@ export default class Workouts extends Component {
 
 <TouchableOpacity onPress={this.navigateToScreen('WGoalsScreen')} activeOpacity={1} style={{marginBottom: 10}}>
 <ImageBackground source={require('../../assets/images/goals.jpg')} style={styles.card_general} imageStyle={{borderRadius: 8}}>
-<LinearGradient colors={['rgba(0,0,0,0.6)', 'rgba(0,0,0,0.9)']} style={styles.gradient_general}>                        
+<LinearGradient colors={['rgba(0,0,0,0.6)', 'rgba(0,0,0,0.9)']} style={styles.gradient_general}>
     <Text style={styles.title_general}>{Strings.ST10.toUpperCase()}</Text>
     <Text style={styles.subtitle_general}>{Strings.ST12.toUpperCase()}</Text>
 </LinearGradient>
@@ -51,7 +51,7 @@ export default class Workouts extends Component {
 
 <TouchableOpacity onPress={this.navigateToScreen('WLevelsScreen')} activeOpacity={1}>
 <ImageBackground source={require('../../assets/images/levels.jpg')} style={styles.card_general} imageStyle={{borderRadius: 8}}>
-<LinearGradient colors={['rgba(0,0,0,0.6)', 'rgba(0,0,0,0.9)']} style={styles.gradient_general}>                        
+<LinearGradient colors={['rgba(0,0,0,0.6)', 'rgba(0,0,0,0.9)']} style={styles.gradient_general}>
     <Text style={styles.title_general}>{Strings.ST11.toUpperCase()}</Text>
     <Text style={styles.subtitle_general}>{Strings.ST13.toUpperCase()}</Text>
 </LinearGradient>
@@ -67,4 +67,3 @@ export default class Workouts extends Component {
     );
   }
 }
-

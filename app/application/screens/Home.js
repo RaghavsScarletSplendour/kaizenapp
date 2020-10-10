@@ -29,7 +29,7 @@ export default class Home extends Component {
   render () {
     return (
 
-<Container style={{backgroundColor: "#000015"}}>
+<Container style={{backgroundColor: "#fffafa"}}>
 
 <ScrollView>
 

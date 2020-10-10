@@ -1240,17 +1240,17 @@ note_home:{
 
 
 gridHomeImage:{
-  width: 60,
-  height: 60,
-  marginBottom: 15,
-  marginTop: 20
+  width: 70,
+  height: 70,
+  marginBottom: 10,
+  marginTop: 100
 },
 
 gridHomeText:{
-  color: '#fff',
-  fontSize: 14,
+  color: 'black',
+  fontSize: 18,
   fontWeight: 'bold',
-  opacity: 0.6
+  opacity: 1
 },
 
 gridHomeCol:{
