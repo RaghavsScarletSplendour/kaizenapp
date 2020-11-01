@@ -8,7 +8,7 @@ const isStandAloneApp = Constants.appOwnership == "standalone";
 const ConfigApp = {
 
     // backend url
-    URL: "../backend",
+    URL: "http://192.168.29.92/backend/",
 
     // facebook page url
     FACEBOOK: "https://facebook.com",
@@ -24,7 +24,7 @@ const ConfigApp = {
 
     // banner admob unit id
     BANNER_ID: "ca-app-pub-4232853679195184/4472153551",
-    
+
     // testdevice id, DON'T CHANGE IT
     TESTDEVICE_ID : isStandAloneApp?"EMULATOR" : "EMULATOR"
 };

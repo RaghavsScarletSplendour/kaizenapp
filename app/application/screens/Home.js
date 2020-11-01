@@ -10,6 +10,7 @@ import { Ionicons } from '@expo/vector-icons';
 import Strings from '../utils/Strings';
 import ColorsApp from '../utils/ColorsApp';
 
+
 var styles = require('../../assets/files/Styles');
 var {height, width} = Dimensions.get('window');
 const DeviceWidth = Dimensions.get('window').width;
@@ -30,6 +31,7 @@ export default class Home extends Component {
     return (
 
 <Container style={{backgroundColor: "#fffafa"}}>
+
 
 <ScrollView>
 

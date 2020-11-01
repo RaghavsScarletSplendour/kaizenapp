@@ -1,6 +1,6 @@
  import React, {Component} from 'react';
 import { NavigationActions } from 'react-navigation';
-import AppPreLoader from '../components/AppPreLoader'; 
+import AppPreLoader from '../components/AppPreLoader';
 import{ ImageBackground, Dimensions, View, TouchableOpacity, FlatList, Button, ActivityIndicator, Image, ScrollView, SafeAreaView, StatusBar } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -22,7 +22,7 @@ export default class ExercisesByEquipment extends Component {
     });
 
 _isMounted = false;
-  
+
   navigateToScreen = (route) => () => {
     const navigateAction = NavigationActions.navigate({
       routeName: route,
@@ -39,10 +39,10 @@ _isMounted = false;
   }
 
   componentDidMount() {
-    
+
        this._isMounted = true;
-       
-       return fetch(ConfigApp.URL+'json/data_equipment.php?equipment='+this.props.navigation.state.params.IdEquipment)
+
+       return fetch(ConfigApp.URL+'json/data_equipment.php?exercise_equipment='+this.props.navigation.state.params.IdEquipment)
          .then((response) => response.json())
          .then((responseJson) => {
           if (this._isMounted) {
@@ -63,7 +63,7 @@ _isMounted = false;
   componentWillUnmount() {
     this._isMounted = false;
   }
-  
+
   ExerciseDetails (item) {
     const navigateAction = NavigationActions.navigate({
       routeName: 'ExerciseDetailsScreen',
@@ -86,7 +86,7 @@ _isMounted = false;
       return (
         <ListEmpty title={Strings.ST140}/>
       );
-    } 
+    }
 
     const { params } = this.props.navigation.state;
     const IdEquipment = params ? params.IdEquipment : null;
@@ -105,9 +105,9 @@ _isMounted = false;
           refreshing="false"
           showsVerticalScrollIndicator={false}
           renderItem={({item}) =>
-                
+
             <ListItem style={{paddingLeft: 0, marginLeft: 0, backgroundColor:'#FFF', opacity: 1, borderColor: 'rgba(0,0,0,0.05)', borderBottomWidth: 1, marginVertical: 20}}  onPress={() => this.ExerciseDetails(item)} noIndent>
-              <Thumbnail square source={{ uri: ConfigApp.URL+'images/'+item.exercise_image }} style={{paddingLeft: 10, marginLeft: 10, width: 90, height: 70}} />
+              <Thumbnail square source={{ uri: 'http://192.168.29.92/backend/images/'+item.exercise_image }} style={{paddingLeft: 10, marginLeft: 10, width: 90, height: 70}} />
               <Body style={{paddingLeft: 0, marginLeft: 0}}>
                 <Text numberOfLines={2} style={{fontSize: 14, fontWeight: 'bold'}}>
                 {item.exercise_title.toUpperCase()}
@@ -119,13 +119,13 @@ _isMounted = false;
                 </Text>
               </Right>
             </ListItem>
-          
+
 }
         keyExtractor={(item, index) => index.toString()}
         ListFooterComponent={this.renderFooter}
 
 
-        /> 
+        />
 
 <View style={{height: 70}}></View>
 
@@ -137,4 +137,3 @@ _isMounted = false;
     );
   }
 }
-

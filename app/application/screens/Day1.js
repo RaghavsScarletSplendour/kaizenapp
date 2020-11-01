@@ -43,7 +43,7 @@ _isMounted = false;
     
         this._isMounted = true;
 
-        return fetch(ConfigApp.URL+'json/data_day1.php?workout='+this.props.navigation.state.params.WorkoutId)
+        return fetch(ConfigApp.URL+'json/data_day1.php?workout_id='+this.props.navigation.state.params.WorkoutId)
          .then((response) => response.json())
          .then((responseJson) => {
           if (this._isMounted) {

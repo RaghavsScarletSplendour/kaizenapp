@@ -23,7 +23,13 @@
     ],
     "ios": {
       "bundleIdentifier": "com.company.appname",
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist":{
+        "NSAllowsArbitraryLoads": true,
+          "NSAppTransportSecurity": {
+            "NSAllowsArbitraryLoads": true,
+          }
+      }
     },
     "android": {
       "package": "com.company.appname",

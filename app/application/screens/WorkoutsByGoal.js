@@ -42,7 +42,7 @@ _isMounted = false;
     
        this._isMounted = true;
        
-       return fetch(ConfigApp.URL+'json/data_wgoal.php?goal='+this.props.navigation.state.params.IdGoal)
+       return fetch(ConfigApp.URL+'json/data_wgoal.php?workout_goal='+this.props.navigation.state.params.IdGoal)
          .then((response) => response.json())
          .then((responseJson) => {
           if (this._isMounted) {

@@ -4,15 +4,15 @@
 
 /* URL PROJECT */
 
-define ('SITE_URL', 'YOUR_URL_HERE');
+define ('SITE_URL', 'http://192.168.29.92:19000/backend/');
 
 /* DATABASE CONFIGURATION */
 
 $database = array(
-'host' => 'DATABASE_HOST_HERE',
-'db' => 'DATABASE_NAME_HERE',
-'user' => 'DATABASE_USER_HERE',
-'pass' => 'DATABASE_PASSWORD_HERE'
+'host' => 'localhost',
+'db' => ' phpMyAdmin',
+'user' => 'root',
+'pass' => 'password'
 );
 
 $email_config = array(

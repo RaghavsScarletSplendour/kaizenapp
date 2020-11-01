@@ -35,10 +35,10 @@ constructor(props) {
   }
 
   componentDidMount() {
-    
+
        this._isMounted = true;
-       
-       return fetch(ConfigApp.URL+'json/data_strings.php')
+
+       return fetch("http://192.168.29.92/backend/"+"json/data_strings.php")
          .then((response) => response.json())
          .then((responseJson) => {
           if (this._isMounted) {
@@ -79,11 +79,11 @@ constructor(props) {
           data={ this.state.dataSource }
           refreshing="false"
           showsVerticalScrollIndicator={false}
-          renderItem={({item}) => 
-<HTML html={item.st_aboutus} />            
+          renderItem={({item}) =>
+<HTML html={item.st_aboutus} />
 }
         keyExtractor={(item, index) => index.toString()}
-        
+
 
         />
 
