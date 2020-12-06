@@ -134,12 +134,12 @@ export default class Home extends Component {
                   style={styles.gridHomeCol}
                 >
                   <Image
-                    source={require("../../assets/images/exercises.png")}
+                    source={require("../../assets/images/SettingsScreen.png")}
                     style={styles.gridHomeImage}
                     resizeMode="contain"
                   />
                   <Text style={styles.gridHomeText}>
-                    {Strings.ST2.toUpperCase()}
+                    {Strings.ST9.toUpperCase()}
                   </Text>
                 </TouchableOpacity>
               </Col>
